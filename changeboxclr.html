@@ -1,0 +1,57 @@
+<!--This program changes the colour of the boxes and displays them.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box colour change!</title>
+    <style>
+        .box
+        {
+            text-align:center;
+            color:red;
+            background-color:blue;
+            display: inline-block;
+        }
+        body{
+            font-size: 33px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This html code will change the colour of the boxes below.</h1>
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <br>
+    <button type="button" onclick="colorfn()">Colours changed!</button>
+    <button type="button" onclick="resetfn()">Colours back to original!!</button>
+
+    <script>
+        function colorfn()
+        {
+            let boxes=document.getElementsByClassName("box");
+
+            for(let i=0;i<boxes.length;i++)
+        {
+            boxes[i].style.color="black";
+            boxes[i].style.backgroundColor="yellow";
+            boxes[i].innerHTML="The colour has been changed!";
+        }
+        }
+        function resetfn()
+        {
+            let boxes=document.getElementsByClassName("box");
+
+            for(let i=0;i<boxes.length;i++)
+        {
+            boxes[i].style.color="black";
+            boxes[i].style.backgroundColor="blue";
+            boxes[i].innerHTML="The colour has been changed!";
+        }
+        }
+    </script>
+</body>
+</html>

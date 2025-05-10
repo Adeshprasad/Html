@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><!--NOT COMPLETE-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turns the light on/off.</title>
+</head>
+<body>
+    <h2>Below is an animated gif lamp that turns on with a button.</h2>
+    <img id="darkroom" src="C:\Users\adesh\Downloads\black.jpg" alt="Dark room image" >
+    <br>
+    <button type="button" onclick="light(0)">Turn on the lamp.</button>
+    <button type="button" onclick="light(1)">Turn off the lamp.</button>
+    
+    <script>
+        function light(sw)
+        {
+            var pic;
+            if(sw==0)
+        {
+            pic="C:\Users\adesh\Downloads\black.jpg";
+        }
+        else{
+            pic="C:\Users\adesh\Downloads\darkroom.jpg";
+        }
+        document.getElementsById("darkroom").src=pic;
+        }
+    </script>
+</body>
+</html>-->
