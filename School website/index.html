@@ -14,6 +14,7 @@
     
     color: white;
   }
+
   body{
     font-family:Geneva;
     background-color: black;
@@ -30,6 +31,13 @@
   .side-border{
     background-color: black;
   }
+
+.content-container {
+    border:  2px solid #000000; 
+}
+.ccft{
+  color: white;
+}
 </style>
 </head>
 
@@ -67,26 +75,26 @@
     </div>
   </div>
 </nav>
-
-<div class="card text-bg-light container side-border" style="background-color: black;">
-    
-  <img src="araria-high-school.jpg" class="card-img" alt="School image" >
-
-  <div class="card-img-overlay text-center d-flex flex-column justify-content-end " >
-    <h5 class="card-title" style="font-size: 30px;font-family:Geneva; color: white;">Welcome to Rajkiya Madhya Vidyalaya</h5>
-    <p class="card-text" style="font-size:30px ;font-family:Geneva;color: white;">A Co-educational government-run middle School located in Forbisganj block, Araria</p>
-    <div><button  onclick="window.location.href='aboutus.html'" type="button" class="btn btn-primary btn-lg">About us</button>
-    <button  onclick="window.location.href='faculty.html'" type="button" class="btn btn-secondary btn-lg">Faculty List</button>
-  <br><br>
-    <div class="card-footer ground">
-    <h5>📢Announcements</h5>
+<hr style="color: white;">
+<div class="card text-bg-light container bg-transparent" >
+   <div class="ccft"
+     <h1>📢Announcements</h1>
     <p>📌Admissions open for Grades 1-8</p>
     <p>📌Annual function on 29th May,2025</p>
   </div>
-  </div></div>
+  <img src="araria-high-school.jpg" class="card-img img-fluid " alt="School image" >
 
+  <div class="card-img-overlay text-center d-flex flex-column justify-content-end " >
+    <h5 class="card-title" style="font-size: 30px;font-family:Geneva; color: white;">Welcome to Rajkiya Madhya Vidyalaya</h5>
+    <p class="card-text" style="font-size: 30px;font-family:Geneva;color: white;">A Co-educational government-run middle School located in Forbisganj block, Araria</p>
+    <div><button  onclick="window.location.href='aboutus.html'" type="button" class="btn btn-primary btn-lg">About us</button>
+    <button  onclick="window.location.href='faculty.html'" type="button" class="btn btn-secondary btn-lg">Faculty List</button>
   
-</div>
+    
+  </div></div>
+    </div>
+  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
@@ -94,3 +102,4 @@
 </body>
 
 </html>
+

@@ -1,51 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <style>
-      body{
-    font-family:Geneva;
-  }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" style="color: white;" >Rajkiya Madhya Vidyalaya, Araria</a>
-    <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a style="color: white;" class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="aboutus.html" >About us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a  style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul class="dropdown-menu" style="color: white;" >
-            <li><a class="dropdown-item" href="faculty.html">Faculty List</a></li>
-            <li><a class="dropdown-item" href="contact.html">Locate us</a></li>
-            <li><hr class="dropdown-divider"></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 bg-secondary" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Geneva;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg " style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: white;">Rajkiya Madhya Vidyalaya, Araria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" style="color: white;">
+              <li><a class="dropdown-item" href="faculty.html">Faculty List</a></li>
+              <li><a class="dropdown-item active" href="contact.html">Locate us</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 bg-secondary" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <hr style="color: white;">
+  <h1 style="text-align: center; color: white;">Contact Us</h1>
+  <div class="container overflow-hidden " style="background-color: white;">
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">
+          <h2>Location:</h2>
+          <p>V Market, 46, Station Rd, Rahika Tola, PHED Colony, Araria, Bihar 854311</p>
+          <h2>Email:</h2>
+          <p>rajkiyavidyalaya@gmail.com</p>
+          <h2>Call:</h2>
+          <p>Primary Contact:9883690602</p>
+          <p>Secondary Contact:9975785678</p>
+          <form>
+            <form action="/action.php">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" placeholder="Student name" required><br>
+    <label for="mail">Email id:</label><br>
+    <input type="text" id="name" placeholder="Email id" required><br>
+    <label for="class">Enter the class for admission:</label>
+    <select id="class" name="Class">
+        <option value="Class 1">Class 1</option>
+        <option value="Class 2">Class 2</option>
+        <option value="Class 3">Class 3</option>
+        <option value="Class 4">Class 4</option>
+        <option value="Class 5">Class 5</option>
+        <option value="Class 6">Class 6</option>
+        <option value="Class 7">Class 7</option>
+        <option value="Class 8">Class 8</option>
+    </select><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset"><br>
+          </form>
+        </div>
+      </div>
+      <div class="col text-center " style="background-color: white;">
+        <div class="p-3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.94
+  96022006647!2d87.46434417541283!3d26.13318617712037!2m3!1f0!2f0!3f0!3m2!1i
+  1024!2i768!4f13.1!3m3!1m2!1s0x39ef890e38feeac1%3A0x40c3a5e97d750fde!2sRajk
+  iya%20Kanya%20Madhya%20Vidyalaya%2C%20Araria!5e0!3m2!1sen!2sin!4v174756345
+  9559!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullsc reen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
     </div>
   </div>
-</nav>
+  <!--<h2>Registration form:</h2>
+    <form action="/action.php">
+    <label for="name">Enter your name:</label><br>
+    <input type="text" id="name" placeholder="student name" required><br>
+    <label for="name">Enter your fathers name:</label><br>
+    <input type="text" id="name" placeholder="fathers name" required><br>
+    <label for="name">Enter your mothers name:</label><br>
+    <input type="text" id="name" placeholder="mothers name" required><br>
+    <label for="mail">Enter your email id:</label><br>
+    <input type="text" id="name" placeholder="email id" required><br>
+    <label for="class">Enter the class for admission:</label><br>
+    <select id="class" name="Class">
+        <option value="Class 1">Class 1</option>
+        <option value="Class 2">Class 2</option>
+        <option value="Class 3">Class 3</option>
+        <option value="Class 4">Class 4</option>
+        <option value="Class 5">Class 5</option>
+        <option value="Class 6">Class 6</option>
+        <option value="Class 7">Class 7</option>
+        <option value="Class 8">Class 8</option>
+        <option value="Class 9">Class 9</option>
+        <option value="Class 11">Class 11</option>
+    </select><br>
+    <label for="num">Enter your contact information:</label><br>
+    <input type="text" id="num" placeholder="mobile number" required><br>
+    <label for="add">Enter your contact address:</label><br>
+    <input type="textarea" id="add" placeholder="Address" required><br>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-  </body>
+    <input type="submit" value="Submit"><br>
+    <input type="reset" value="Reset"><br>
+    </form>-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
