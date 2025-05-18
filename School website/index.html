@@ -11,18 +11,31 @@
 <style>
   .card-footer 
   {
-    background-color: white;
+    
     color: white;
   }
   body{
     font-family:Geneva;
+    background-color: black;
+  }
+  .back{
+    background-color: black;
+  }
+  .card{
+    background-color: black;
+  }
+  .ground{
+    background-color: black;
+  }
+  .side-border{
+    background-color: black;
   }
 </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class=" back navbar navbar-expand-lg ">
   <div class="container-fluid">
     <a class="navbar-brand" style="color: white;" >Rajkiya Madhya Vidyalaya, Araria</a>
     <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,21 +68,21 @@
   </div>
 </nav>
 
-<div class="card text-bg-light container-fluid">
-    <div class="card-footer bg-dark">
+<div class="card text-bg-light container side-border" style="background-color: black;">
+    
+  <img src="araria-high-school.jpg" class="card-img" alt="School image" >
+
+  <div class="card-img-overlay text-center d-flex flex-column justify-content-end " >
+    <h5 class="card-title" style="font-size: 30px;font-family:Geneva; color: white;">Welcome to Rajkiya Madhya Vidyalaya</h5>
+    <p class="card-text" style="font-size:30px ;font-family:Geneva;color: white;">A Co-educational government-run middle School located in Forbisganj block, Araria</p>
+    <div><button  onclick="window.location.href='aboutus.html'" type="button" class="btn btn-primary btn-lg">About us</button>
+    <button  onclick="window.location.href='faculty.html'" type="button" class="btn btn-secondary btn-lg">Faculty List</button>
+  <br><br>
+    <div class="card-footer ground">
     <h5>📢Announcements</h5>
     <p>📌Admissions open for Grades 1-8</p>
     <p>📌Annual function on 29th May,2025</p>
   </div>
-  <img src="araria-high-school.jpg" class="card-img" alt="School image" >
-
-  <div class="card-img-overlay text-center d-flex flex-column justify-content-end " >
-    <h5 class="card-title" style="font-size: 50px;font-family:Geneva; color: white;">Welcome to Rajkiya Madhya Vidyalaya</h5>
-    <p class="card-text" style="font-size: 30px;font-family:Geneva;color: white;">A Co-educational government-run middle School located in Forbisganj block, Araria</p>
-    <p class="card-text" style="font-size: 20px;font-family:Geneva;color: white"><small>Last updated 3 mins ago</small></p>
-    <div><button  onclick="window.location.href='aboutus.html'" type="button" class="btn btn-primary btn-lg">About us</button>
-    <button  onclick="window.location.href='faculty.html'" type="button" class="btn btn-secondary btn-lg">Faculty List</button>
-  
   </div></div>
 
   
