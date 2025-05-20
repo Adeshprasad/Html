@@ -65,12 +65,11 @@
           <h2>Call:</h2>
           <p>Primary Contact:9883690602</p>
           <p>Secondary Contact:9975785678</p>
-          <form>
-            <form action="/action.php">
+            <form action="response.html" method="get">
     <label for="name">Name:</label><br>
-    <input type="text" id="name" placeholder="Student name" required><br>
+    <input type="text" id="name" placeholder="Student name" name="Student" required><br>
     <label for="mail">Email id:</label><br>
-    <input type="text" id="name" placeholder="Email id" required><br>
+    <input type="text" id="name" placeholder="Email id" name="Email" required><br>
     <label for="class">Enter the class for admission:</label>
     <select id="class" name="Class">
         <option value="Class 1">Class 1</option>
@@ -82,7 +81,7 @@
         <option value="Class 7">Class 7</option>
         <option value="Class 8">Class 8</option>
     </select><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" onclick='window.location.href="response.html"'>
     <input type="reset" value="Reset"><br>
           </form>
         </div>
@@ -97,38 +96,6 @@
       </div>
     </div>
   </div>
-  <!--<h2>Registration form:</h2>
-    <form action="/action.php">
-    <label for="name">Enter your name:</label><br>
-    <input type="text" id="name" placeholder="student name" required><br>
-    <label for="name">Enter your fathers name:</label><br>
-    <input type="text" id="name" placeholder="fathers name" required><br>
-    <label for="name">Enter your mothers name:</label><br>
-    <input type="text" id="name" placeholder="mothers name" required><br>
-    <label for="mail">Enter your email id:</label><br>
-    <input type="text" id="name" placeholder="email id" required><br>
-    <label for="class">Enter the class for admission:</label><br>
-    <select id="class" name="Class">
-        <option value="Class 1">Class 1</option>
-        <option value="Class 2">Class 2</option>
-        <option value="Class 3">Class 3</option>
-        <option value="Class 4">Class 4</option>
-        <option value="Class 5">Class 5</option>
-        <option value="Class 6">Class 6</option>
-        <option value="Class 7">Class 7</option>
-        <option value="Class 8">Class 8</option>
-        <option value="Class 9">Class 9</option>
-        <option value="Class 11">Class 11</option>
-    </select><br>
-    <label for="num">Enter your contact information:</label><br>
-    <input type="text" id="num" placeholder="mobile number" required><br>
-    <label for="add">Enter your contact address:</label><br>
-    <input type="textarea" id="add" placeholder="Address" required><br>
-
-    <input type="submit" value="Submit"><br>
-    <input type="reset" value="Reset"><br>
-    </form>-->
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
